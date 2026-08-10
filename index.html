@@ -1,0 +1,622 @@
+5t<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrutansu Pradhan | AI &amp; ML Engineer &amp; Developer Portfolio</title>
+  <meta name="description" content="Amrutansu Pradhan — B.Tech Computer Science (AI & ML) student. Portfolio showcasing AI/ML projects, web development skills, and achievements.">
+  <meta name="keywords" content="Amrutansu Pradhan, AI, ML, Machine Learning, Portfolio, Developer, B.Tech CSE">
+  <meta name="author" content="Amrutansu Pradhan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amrutansu Pradhan | AI & ML Engineer">
+  <meta property="og:description" content="B.Tech CSE (AI & ML) student building intelligent, real-world solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/icons/favicon.png" type="image/png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ============== PAGE LOADER ============== -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">AP<span class="dot">.</span></div>
+    <div class="loader-bar"><div class="loader-progress" id="loaderProgress"></div></div>
+  </div>
+
+  <!-- ============== SCROLL PROGRESS BAR ============== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============== CUSTOM CURSOR ============== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ============== PARTICLES BACKGROUND ============== -->
+  <div id="particles-js"></div>
+
+  <!-- ============== NAVBAR ============== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="logo">Amrutansu<span>.</span></a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============== HERO SECTION ============== -->
+  <section class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Amrutansu Pradhan</h1>
+        <h2 class="hero-role">I'm a <span id="typed-text" class="typed-cursor-text"></span></h2>
+        <p class="hero-desc">
+          B.Tech Computer Science student specializing in <strong>Artificial Intelligence &amp; Machine Learning</strong>.
+          I design intelligent systems and modern web experiences that solve real problems.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary ripple">Hire Me <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="resume/resume.pdf" class="btn btn-outline ripple" download>Download CV <i class="fa-solid fa-download"></i></a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/" target="_blank" rel="noopener" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+          <a href="mailto:amrutansupradhan17@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap" data-aos="fade-left" data-aos-duration="1000">
+        <div class="hero-glow"></div>
+        <div class="hero-image magnetic">
+          <img src="images/profile.jpeg" alt="Portrait of Amrutansu Pradhan" loading="eager">
+        </div>
+        <div class="floating-badge badge-1"><i class="fa-solid fa-brain"></i><span>AI/ML</span></div>
+        <div class="floating-badge badge-2"><i class="fa-solid fa-code"></i><span>Full-Stack</span></div>
+        <div class="floating-badge badge-3"><i class="fa-solid fa-robot"></i><span>Deep Learning</span></div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span class="mouse"><span class="wheel"></span></span>
+      <p>Scroll Down</p>
+    </a>
+  </section>
+
+  <!-- ============== SKILLS SECTION ============== -->
+  <section class="skills" id="skills">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">What I Know</p>
+      <h2 class="section-title">My Skills</h2>
+    </div>
+
+    <div class="skills-container">
+      <div class="skills-col" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="skills-col-title"><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+        <div class="skill-bar">
+          <div class="skill-info"><span>HTML5</span><span>95%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>CSS3</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>JavaScript</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>React.js</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-col" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="skills-col-title"><i class="fa-solid fa-server"></i> Backend &amp; Database</h3>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Node.js</span><span>70%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Java</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Python</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>MySQL</span><span>78%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-col" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="skills-col-title"><i class="fa-solid fa-brain"></i> AI &amp; ML</h3>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Machine Learning</span><span>88%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Deep Learning</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>TensorFlow</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>OpenCV</span><span>72%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="72"></div></div>
+        </div>
+      </div>
+
+      <div class="skills-col" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="skills-col-title"><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Communication</span><span>90%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Leadership</span><span>82%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Time Management</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-info"><span>Critical Thinking</span><span>88%</span></div>
+          <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TECH STACK -->
+    <div class="techstack" data-aos="fade-up">
+      <h3 class="techstack-title">Tech Stack &amp; Tools</h3>
+      <div class="techstack-grid">
+        <div class="tech-icon" title="HTML5"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+        <div class="tech-icon" title="CSS3"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+        <div class="tech-icon" title="JavaScript"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+        <div class="tech-icon" title="React"><i class="fa-brands fa-react"></i><span>React</span></div>
+        <div class="tech-icon" title="Node.js"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+        <div class="tech-icon" title="Java"><i class="fa-solid fa-mug-hot"></i><span>Java</span></div>
+        <div class="tech-icon" title="Python"><i class="fa-brands fa-python"></i><span>Python</span></div>
+        <div class="tech-icon" title="MySQL"><i class="fa-solid fa-database"></i><span>MySQL</span></div>
+        <div class="tech-icon" title="Git"><i class="fa-brands fa-git-alt"></i><span>Git</span></div>
+        <div class="tech-icon" title="GitHub"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+        <div class="tech-icon" title="TensorFlow"><i class="fa-solid fa-diagram-project"></i><span>TensorFlow</span></div>
+        <div class="tech-icon" title="OpenCV"><i class="fa-solid fa-eye"></i><span>OpenCV</span></div>
+        <div class="tech-icon" title="VS Code"><i class="fa-solid fa-code"></i><span>VS Code</span></div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- ============== PROJECTS SECTION ============== -->
+  <section class="projects" id="projects">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">My Work</p>
+      <h2 class="section-title">Projects of mine</h2>
+    </div>
+
+    <div class="project-filters" data-aos="fade-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="ai">AI/ML</button>
+      <button class="filter-btn" data-filter="web">Web Dev</button>
+      <button class="filter-btn" data-filter="app">Applications</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card tilt" data-category="ai" data-aos="fade-up"
+           data-title="Plant Disease Detection System"
+           data-desc="A CNN-based deep learning model that detects plant leaf diseases from images with 96% accuracy, deployed as a web app for farmers to get instant diagnoses."
+           data-tech="Python, TensorFlow, OpenCV, Flask, React"
+           data-features="Real-time image classification, Mobile-friendly interface, Disease treatment suggestions, 96% model accuracy"
+           data-github="https://github.com/leafguard_digit_detection_preditction_system" data-demo="https://example.com/">
+        <div class="project-img"><img src="images/project1.jpg" alt="Plant Disease Detection System screenshot" loading="lazy"></div>
+        <div class="project-info">
+          <span class="project-tag">AI / ML</span>
+          <h3>Plant Disease Detection System</h3>
+          <p>CNN-based model detecting plant leaf diseases from images with high accuracy.</p>
+          <div class="project-links">
+            <span class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt" data-category="web" data-aos="fade-up" data-aos-delay="100"
+           data-title="E-Commerce Web Platform"
+           data-desc="A full-stack e-commerce platform with product catalog, cart, secure checkout, and an admin dashboard for inventory management."
+           data-tech="React, Node.js, Express, MongoDB"
+           data-features="Secure authentication, Payment gateway integration, Admin dashboard, Responsive design"
+           data-github="https://github.com/" data-demo="https://example.com/">
+        <div class="project-img"><img src="images/project2.png" alt="E-Commerce Web Platform screenshot" loading="lazy"></div>
+        <div class="project-info">
+          <span class="project-tag">Web Dev</span>
+          <h3>E-Commerce Web Platform</h3>
+          <p>Full-stack shopping platform with cart, checkout, and admin dashboard.</p>
+          <div class="project-links">
+            <span class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt" data-category="app" data-aos="fade-up" data-aos-delay="200"
+           data-title="AI Resume Screener"
+           data-desc="An NLP-powered application that parses resumes and ranks candidates against job descriptions to speed up recruiter shortlisting."
+           data-tech="Python, NLP, Scikit-learn, Streamlit"
+           data-features="Resume parsing, Keyword matching score, Candidate ranking, Exportable reports"
+           data-github="https://github.com/" data-demo="https://example.com/">
+        <div class="project-img"><img src="images/project3.png" alt="AI Resume Screener screenshot" loading="lazy"></div>
+        <div class="project-info">
+          <span class="project-tag">Application</span>
+          <h3>AI Resume Screener</h3>
+          <p>NLP tool that parses and ranks resumes against job descriptions.</p>
+          <div class="project-links">
+            <span class="view-details">View Details <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close details"><i class="fa-solid fa-xmark"></i></button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div class="modal-block">
+        <h4>Technology Used</h4>
+        <p id="modalTech"></p>
+      </div>
+      <div class="modal-block">
+        <h4>Key Features</h4>
+        <ul id="modalFeatures"></ul>
+      </div>
+      <div class="modal-buttons">
+        <a id="modalGithub" href="#" target="_blank" rel="noopener" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a id="modalDemo" href="#" target="_blank" rel="noopener" class="btn btn-primary"><i class="fa-solid fa-globe"></i> Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== CERTIFICATES SECTION ============== -->
+  <section class="certificates" id="certificates">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">Recognitions</p>
+      <h2 class="section-title">Certificates</h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert-card" data-aos="zoom-in">
+        <img src="certificates/cert1.jpeg" alt="ANDROID DEVELOPER Certification">
+        <div class="cert-overlay"><i class="fa-solid fa-magnifying-glass"></i><span>View Certificate</span></div>
+        <h4>ANDROID DEVELOPER CERTIFICATIN</h4>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="certificates/cert2.png" alt="AI-ML WITH PYTHON Certification">
+        <div class="cert-overlay"><i class="fa-solid fa-magnifying-glass"></i><span>View Certificate</span></div>
+        <h4> AI-ML PYTHON CERTIFICATION</h4>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="certificates/cert3.png" alt="MERN FULL STACK DEVELOPMENT Certification">
+        <div class="cert-overlay"><i class="fa-solid fa-magnifying-glass"></i><span>View Certificate</span></div>
+        <h4> MERN FULL-STACK WEB DEVELOPMENT</h4>
+      </div>
+      <div class="cert-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="certificates/cert4.png" alt="Python Certification">
+        <div class="cert-overlay"><i class="fa-solid fa-magnifying-glass"></i><span>View Certificate</span></div>
+        <h4>TCS ION AI FOUNDATION</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== ACHIEVEMENTS / COUNTERS ============== -->
+  <section class="achievements" id="achievements">
+    <div class="achv-grid">
+      <div class="achv-card" data-aos="fade-up">
+        <i class="fa-solid fa-diagram-project"></i>
+        <h3 class="counter" data-target="8">0</h3>
+        <p>Projects Completed</p>
+      </div>
+      <div class="achv-card" data-aos="fade-up" data-aos-delay="100">
+        <i class="fa-solid fa-certificate"></i>
+        <h3 class="counter" data-target="10+">0</h3>
+        <p>Certificates Earned</p>
+      </div>
+      <div class="achv-card" data-aos="fade-up" data-aos-delay="200">
+        <i class="fa-solid fa-code"></i>
+        <h3 class="counter" data-target="40+">0</h3>
+        <p>Coding Problems Solved</p>
+      </div>
+  
+    </div>
+  </section>
+
+   <!-- ============== ABOUT SECTION ============== -->
+  <section class="about" id="about">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">Get To Know Me</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="about-container">
+      <div class="about-image" data-aos="fade-right">
+        <div class="about-img-frame">
+          <img src="images/about.jpeg" alt="Amrutansu Pradhan working" loading="lazy">
+        </div>
+        <div class="about-exp-card">
+          <h3>2+</h3>
+          <p>Years of Learning &amp; Building</p>
+        </div>
+      </div>
+
+      <div class="about-content" data-aos="fade-left">
+        <h3 class="about-subtitle">Turning Data Into Decisions, and Ideas Into Interfaces.</h3>
+        <p class="about-text">
+          I'm Amrutansu Pradhan, a Computer Science undergraduate specializing in Artificial Intelligence and
+          Machine Learning. I enjoy building systems that learn from data as much as I enjoy crafting clean,
+          responsive user interfaces. My goal is to bridge intelligent backend systems with delightful front-end
+          experiences.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-graduation-cap"></i> Career Goal</span>
+            <span class="about-value">AI/ML Engineer &amp; Software Developer</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-school"></i> Education</span>
+            <span class="about-value">B.Tech CSE (AI &amp; ML)</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-calendar"></i> Birthday</span>
+            <span class="about-value">11 March 2007</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+            <span class="about-value">Odisha, India</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-language"></i> Languages</span>
+            <span class="about-value">English, Hindi, Odia</span>
+          </div>
+          <div class="about-item">
+            <span class="about-label"><i class="fa-solid fa-heart"></i> Interests</span>
+            <span class="about-value">AI Research, Web Dev, Chess</span>
+          </div>
+        </div>
+
+        <div class="about-strengths">
+          <span class="strength-tag">Problem Solving</span>
+          <span class="strength-tag">Team Collaboration</span>
+          <span class="strength-tag">Fast Learner</span>
+          <span class="strength-tag">Analytical Thinking</span>
+        </div>
+
+        <a href="#contact" class="btn btn-primary ripple">Let's Talk <i class="fa-solid fa-paper-plane"></i></a>
+      </div>
+    </div>
+  </section>
+
+   <!-- ============== EDUCATION SECTION ============== -->
+  <section class="education" id="education">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">My Journey</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2024 — 2028</span>
+          <h3>B.Tech, Computer Science (AI &amp; ML)</h3>
+          <p class="timeline-institute">GANDHI INSTITUTE OF ENGINEERING AND TECHNOLOGY UNIVERSITY, GUNUPUR</p>
+          <p class="timeline-desc">Specializing in Artificial Intelligence &amp; Machine Learning. Current CGPA: 7.2/10.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2022 — 2024</span>
+          <h3>Higher Secondary (12th), Science</h3>
+          <p class="timeline-institute">GYANA VIKASH HIGHER SECONDARY SCHOOL,BERHAMPUR</p>
+          <p class="timeline-desc">Completed with Physics, Chemistry, Mathematics, and Biology. Scored 62%.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-year">2020 — 2022</span>
+          <h3>Secondary Education (10th)</h3>
+          <p class="timeline-institute">SSVM NILAKANTHA NAGAR, BERHAMPUR</p>
+          <p class="timeline-desc">Completed secondary education with distinction. Scored 82%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CODING PROFILES ============== -->
+  <section class="coding-profiles" id="coding-profiles">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">Find Me On</p>
+      <h2 class="section-title">Coding Profiles</h2>
+    </div>
+
+    <div class="profiles-grid">
+      <a href="https://github.com/amrutansupradhan121-code" target="_blank" rel="noopener" class="profile-card" data-aos="fade-up">
+        <i class="fa-brands fa-github"></i><span>GitHub</span>
+      </a>
+      <a href="https://linkedin.com/in/amrutansu-pradhan" target="_blank" rel="noopener" class="profile-card" data-aos="fade-up" data-aos-delay="80">
+        <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+      </a>
+      <a href="https://www.instagram.com/the_humorist_07?igsh=cWM1ZWN1dWh3cjJ5" target="_blank" rel="noopener" class="profile-card" data-aos="fade-up" data-aos-delay="80">
+        <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+      </a>
+      
+     
+    </div>
+  </section>
+
+  <!-- ============== RESUME SECTION ============== -->
+  <section class="resume" id="resume">
+    <div class="resume-container" data-aos="zoom-in">
+      <div class="resume-text">
+        <p class="section-tag">My Resume</p>
+        <h2 class="section-title">Ready To Learn More About Me?</h2>
+        <p>Download my complete resume to explore my education, skills, and project history in detail.</p>
+        <div class="hero-buttons">
+          <a href="resume/resume.pdf" target="_blank" class="btn btn-outline ripple">View Resume <i class="fa-solid fa-eye"></i></a>
+          <a href="resume/resume.pdf" download class="btn btn-primary ripple">Download <i class="fa-solid fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CONTACT SECTION ============== -->
+  <section class="contact" id="contact">
+    <div class="section-header" data-aos="fade-up">
+      <p class="section-tag">Get In Touch</p>
+      <h2 class="section-title">Contact Me</h2>
+    </div>
+
+    <div class="contact-container">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h4>Email</h4><p>amrutansupradhan17@gmail.com</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div><h4>Phone</h4><p>+91 7735654579</p></div>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h4>Location</h4><p>Odisha, India</p></div>
+        </div>
+        <div class="hero-socials contact-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="mailto:amrutansupradhan17@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+         <div class="hero-image magnetic">
+          <img src="images/last.png" alt="Portrait of Amrutansu Pradhan" loading="eager">
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" id="name" name="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" required placeholder=" ">
+            <label for="email">Your Email</label>
+            <span class="form-error" id="emailError"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="phone" name="phone" placeholder=" ">
+          <label for="phone">Phone Number (Optional)</label>
+          <span class="form-error" id="phoneError"></span>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" name="subject" required placeholder=" ">
+          <label for="subject">Subject</label>
+          <span class="form-error" id="subjectError"></span>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required placeholder=" "></textarea>
+          <label for="message">Your Message</label>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn btn-primary ripple full-width">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        <p class="form-success" id="formSuccess">Message sent successfully! I'll get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">WELCOME TO THIS PROFILE<span>.</span></a>
+        <p>AI &amp; ML Engineer crafting intelligent solutions and modern web experiences.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Follow Me</h4>
+        <div class="hero-socials">
+          <a href="https://github.com/amrutansupradhan121-code" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com/in/amrutansu-pradhan" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/the_humorist_07?igsh=cWM1ZWN1dWh3cjJ5" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:amrutansupradhan17@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Amrutansu Pradhan. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============== BACK TO TOP ============== -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- ============== SCRIPTS ============== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="js/particles.js"></script>
+  <script src="js/typing.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
